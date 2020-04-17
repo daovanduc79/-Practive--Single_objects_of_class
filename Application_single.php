@@ -13,6 +13,7 @@ class Application_single
     {
         if (self::$instance == null) {
             self::$instance = new Application_single();
+            echo 'hello';
         }
         return self::$instance;
     }
