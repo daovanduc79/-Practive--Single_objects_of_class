@@ -1,0 +1,20 @@
+<?php
+
+
+class Application_single
+{
+    private static $instance;
+
+    private function __construct()
+    {
+    }
+
+    public static function getInstance()
+    {
+        if (self::$instance == null) {
+            self::$instance = new Application_single();
+        }
+        return self::$instance;
+    }
+
+}
